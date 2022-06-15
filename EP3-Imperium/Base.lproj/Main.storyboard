@@ -17,34 +17,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfN-ZD-eFZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="2"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="I0L-HU-zJY"/>
+                                    <constraint firstAttribute="height" constant="44" id="I0L-HU-zJY"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fb-pO-bRw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CaraLibro-img" translatesAutoresizingMaskIntoConstraints="NO" id="LcS-Am-7j5">
-                                <rect key="frame" x="0.0" y="46" width="414" height="326"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CaraLibro-img" translatesAutoresizingMaskIntoConstraints="NO" id="59Q-Uw-EGj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="298"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kfN-ZD-eFZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0fD-7b-QYB"/>
-                            <constraint firstItem="LcS-Am-7j5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4PF-7g-qi6"/>
                             <constraint firstItem="kfN-ZD-eFZ" firstAttribute="top" secondItem="4Fb-pO-bRw" secondAttribute="bottom" id="9Xe-J8-YHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="59Q-Uw-EGj" secondAttribute="trailing" id="ADP-Xq-QBS"/>
                             <constraint firstItem="kfN-ZD-eFZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lhu-yO-nJT"/>
+                            <constraint firstItem="59Q-Uw-EGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N3T-Dt-Qw8"/>
                             <constraint firstItem="4Fb-pO-bRw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TDT-8L-GJ0"/>
                             <constraint firstItem="4Fb-pO-bRw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uzd-to-2hf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kfN-ZD-eFZ" secondAttribute="trailing" id="XBt-ig-kFS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LcS-Am-7j5" secondAttribute="trailing" id="eJz-yE-8Dd"/>
                             <constraint firstAttribute="trailing" secondItem="4Fb-pO-bRw" secondAttribute="trailing" id="fa6-eN-OFt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LcS-Am-7j5" secondAttribute="bottom" constant="490" id="jAN-SE-dsu"/>
-                            <constraint firstItem="LcS-Am-7j5" firstAttribute="top" secondItem="kfN-ZD-eFZ" secondAttribute="bottom" id="qYX-2Y-Igp"/>
+                            <constraint firstItem="59Q-Uw-EGj" firstAttribute="top" secondItem="kfN-ZD-eFZ" secondAttribute="bottom" id="snY-jz-tLg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="59Q-Uw-EGj" secondAttribute="bottom" constant="520" id="vYv-2v-orP"/>
                         </constraints>
                     </view>
                 </viewController>
