@@ -8,5 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
+    func prueba(){
+        
+    }
 }
