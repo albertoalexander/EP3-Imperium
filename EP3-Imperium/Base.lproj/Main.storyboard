@@ -22,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvG-NP-ebC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-671" y="78"/>
+            <point key="canvasLocation" x="-732" y="-319"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -46,6 +46,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CaraLibro-img" translatesAutoresizingMaskIntoConstraints="NO" id="59Q-Uw-EGj">
                                 <rect key="frame" x="0.0" y="94" width="414" height="348"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0q-p4-Rz2">
+                                <rect key="frame" x="250" y="469" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Recuperar"/>
+                                <connections>
+                                    <segue destination="Ufg-Je-970" kind="show" id="hXf-0G-QvS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ub-dR-Ae9">
+                                <rect key="frame" x="86" y="469" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Registrar"/>
+                                <connections>
+                                    <segue destination="giK-kh-vtj" kind="show" id="f0j-px-Rt1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,7 +82,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+            <point key="canvasLocation" x="292.75362318840581" y="-319.41964285714283"/>
+        </scene>
+        <!--RegisterViewController-->
+        <scene sceneID="rjt-i1-Fta">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" referencedIdentifier="RegisterViewController" id="giK-kh-vtj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qST-C9-ouB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vs-NW-Yy9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="68"/>
+        </scene>
+        <!--RecoverViewController-->
+        <scene sceneID="ip6-Kz-hzp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Recover" referencedIdentifier="RecoverViewController" id="Ufg-Je-970" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UwN-m0-Ghh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dy9-eC-0ZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="68"/>
         </scene>
     </scenes>
     <resources>
