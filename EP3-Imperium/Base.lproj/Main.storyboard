@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pMX-yP-cJj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6Ce-d8-aiA">
+            <objects>
+                <navigationController id="pMX-yP-cJj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IuI-CO-ML9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vpu-e3-Nu9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvG-NP-ebC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671" y="78"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -28,7 +44,7 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CaraLibro-img" translatesAutoresizingMaskIntoConstraints="NO" id="59Q-Uw-EGj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="298"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="348"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,10 +58,11 @@
                             <constraint firstItem="4Fb-pO-bRw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uzd-to-2hf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kfN-ZD-eFZ" secondAttribute="trailing" id="XBt-ig-kFS"/>
                             <constraint firstAttribute="trailing" secondItem="4Fb-pO-bRw" secondAttribute="trailing" id="fa6-eN-OFt"/>
-                            <constraint firstItem="59Q-Uw-EGj" firstAttribute="top" secondItem="kfN-ZD-eFZ" secondAttribute="bottom" id="snY-jz-tLg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="59Q-Uw-EGj" secondAttribute="bottom" constant="520" id="vYv-2v-orP"/>
+                            <constraint firstItem="59Q-Uw-EGj" firstAttribute="top" secondItem="kfN-ZD-eFZ" secondAttribute="bottom" constant="50" id="snY-jz-tLg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="59Q-Uw-EGj" secondAttribute="bottom" constant="420" id="vYv-2v-orP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gvp-fg-lOK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
