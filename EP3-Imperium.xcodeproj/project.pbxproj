@@ -13,6 +13,7 @@
 		0782FD27285A69F60074A233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0782FD26285A69F60074A233 /* Assets.xcassets */; };
 		0782FD2A285A69F60074A233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0782FD28285A69F60074A233 /* LaunchScreen.storyboard */; };
 		07BD989F285D4C3200DFB16B /* demo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BD989E285D4C3200DFB16B /* demo2.swift */; };
+		07BD989B285D4A8600DFB16B /* prueba1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BD989A285D4A8600DFB16B /* prueba1.swift */; };
 		07CA5C3E285CF32100D2D19F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CA5C3D285CF32100D2D19F /* LoginViewController.swift */; };
 		07CA5C42285D084F00D2D19F /* RecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CA5C41285D084F00D2D19F /* RecoverViewController.swift */; };
 		07CA5C45285D0C5B00D2D19F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CA5C44285D0C5B00D2D19F /* RegisterViewController.swift */; };
@@ -29,6 +30,7 @@
 		0782FD29285A69F60074A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0782FD2B285A69F60074A233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07BD989E285D4C3200DFB16B /* demo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo2.swift; sourceTree = "<group>"; };
+		07BD989A285D4A8600DFB16B /* prueba1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba1.swift; sourceTree = "<group>"; };
 		07CA5C3D285CF32100D2D19F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		07CA5C41285D084F00D2D19F /* RecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverViewController.swift; sourceTree = "<group>"; };
 		07CA5C44285D0C5B00D2D19F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				07CA5C41285D084F00D2D19F /* RecoverViewController.swift */,
 				07CA5C44285D0C5B00D2D19F /* RegisterViewController.swift */,
 				07BD989E285D4C3200DFB16B /* demo2.swift */,
+				07BD989A285D4A8600DFB16B /* prueba1.swift */,
 			);
 			path = "EP3-Imperium";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				07CA5C45285D0C5B00D2D19F /* RegisterViewController.swift in Sources */,
 				0782FD1E285A69F30074A233 /* AppDelegate.swift in Sources */,
 				0782FD20285A69F30074A233 /* SceneDelegate.swift in Sources */,
+				07BD989B285D4A8600DFB16B /* prueba1.swift in Sources */,
 				07CA5C42285D084F00D2D19F /* RecoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
