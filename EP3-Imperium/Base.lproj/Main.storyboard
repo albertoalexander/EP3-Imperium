@@ -32,22 +32,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfN-ZD-eFZ">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfN-ZD-eFZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="I0L-HU-zJY"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fb-pO-bRw">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Fb-pO-bRw">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CaraLibro-img" translatesAutoresizingMaskIntoConstraints="NO" id="59Q-Uw-EGj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CaraLibro-img" translatesAutoresizingMaskIntoConstraints="NO" id="59Q-Uw-EGj">
                                 <rect key="frame" x="0.0" y="94" width="414" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0q-p4-Rz2">
-                                <rect key="frame" x="250" y="469" width="71" height="30"/>
+                                <rect key="frame" x="243" y="472" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Recuperar"/>
                                 <connections>
@@ -55,30 +55,46 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ub-dR-Ae9">
-                                <rect key="frame" x="86" y="469" width="62" height="30"/>
+                                <rect key="frame" x="81" y="472" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Registrar"/>
                                 <connections>
+                                    <action selector="signUpButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWy-ue-u48"/>
                                     <segue destination="giK-kh-vtj" kind="show" id="f0j-px-Rt1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dja-y5-mI0">
+                                <rect key="frame" x="46" y="536" width="321" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-zu-Zr3">
+                                <rect key="frame" x="46" y="598" width="321" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ers-jn-MAf">
+                                <rect key="frame" x="46" y="666" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Acceder"/>
+                                <connections>
+                                    <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRZ-m9-2O7"/>
+                                    <segue destination="W2C-3f-hwy" kind="show" id="ZLl-Qy-M2d"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="kfN-ZD-eFZ" firstAttribute="top" secondItem="4Fb-pO-bRw" secondAttribute="bottom" id="9Xe-J8-YHx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="59Q-Uw-EGj" secondAttribute="trailing" id="ADP-Xq-QBS"/>
-                            <constraint firstItem="kfN-ZD-eFZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lhu-yO-nJT"/>
-                            <constraint firstItem="59Q-Uw-EGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N3T-Dt-Qw8"/>
-                            <constraint firstItem="4Fb-pO-bRw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TDT-8L-GJ0"/>
-                            <constraint firstItem="4Fb-pO-bRw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uzd-to-2hf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kfN-ZD-eFZ" secondAttribute="trailing" id="XBt-ig-kFS"/>
-                            <constraint firstAttribute="trailing" secondItem="4Fb-pO-bRw" secondAttribute="trailing" id="fa6-eN-OFt"/>
-                            <constraint firstItem="59Q-Uw-EGj" firstAttribute="top" secondItem="kfN-ZD-eFZ" secondAttribute="bottom" constant="50" id="snY-jz-tLg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="59Q-Uw-EGj" secondAttribute="bottom" constant="420" id="vYv-2v-orP"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gvp-fg-lOK"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Dja-y5-mI0" id="wsx-Ii-7y9"/>
+                        <outlet property="logInButtonAction" destination="ers-jn-MAf" id="wyw-mI-q34"/>
+                        <outlet property="passwordTextField" destination="Wae-zu-Zr3" id="UJ7-c0-kUs"/>
+                        <outlet property="signUpButton" destination="9ub-dR-Ae9" id="dgv-aL-X7g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,7 +108,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vs-NW-Yy9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470" y="68"/>
+            <point key="canvasLocation" x="47" y="68"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="C0Z-hu-T5Q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="W2C-3f-hwy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Wxq-RE-LMI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2s2-ha-40x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="68"/>
         </scene>
         <!--RecoverViewController-->
         <scene sceneID="ip6-Kz-hzp">
@@ -102,7 +128,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy9-eC-0ZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="68"/>
+            <point key="canvasLocation" x="318" y="68"/>
         </scene>
     </scenes>
     <resources>
