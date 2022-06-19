@@ -8,13 +8,18 @@
 import UIKit
 import FirebaseAuth
 
+enum ProviderType: String{
+    case basic
+}
+
 class LoginViewController:
     UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var logInButtonAction: UIButton!
+    @IBOutlet weak var logInButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +35,7 @@ class LoginViewController:
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().signIn(withEmail: email, password: password){
                 (result, error) in
-                if let result = result, error == nil{
+                if error == nil{
                     
                     self.navigationController?.pushViewController(HomeViewController(), animated: true)
                 } else {

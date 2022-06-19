@@ -81,7 +81,6 @@
                                 <state key="normal" title="Acceder"/>
                                 <connections>
                                     <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRZ-m9-2O7"/>
-                                    <segue destination="W2C-3f-hwy" kind="show" id="ZLl-Qy-M2d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,7 +90,7 @@
                     <navigationItem key="navigationItem" id="gvp-fg-lOK"/>
                     <connections>
                         <outlet property="emailTextField" destination="Dja-y5-mI0" id="wsx-Ii-7y9"/>
-                        <outlet property="logInButtonAction" destination="ers-jn-MAf" id="wyw-mI-q34"/>
+                        <outlet property="logInButton" destination="ers-jn-MAf" id="zDU-dN-dDW"/>
                         <outlet property="passwordTextField" destination="Wae-zu-Zr3" id="UJ7-c0-kUs"/>
                         <outlet property="signUpButton" destination="9ub-dR-Ae9" id="dgv-aL-X7g"/>
                     </connections>
@@ -128,7 +127,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy9-eC-0ZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="68"/>
+            <point key="canvasLocation" x="304" y="68"/>
         </scene>
     </scenes>
     <resources>
