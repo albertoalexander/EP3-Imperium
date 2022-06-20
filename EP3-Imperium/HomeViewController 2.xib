@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="EP3_Imperium" customModuleProvider="target">
             <connections>
-                <outlet property="closeSessionButton" destination="euS-gP-t2h" id="bJP-PI-aHn"/>
                 <outlet property="view" destination="iN0-l3-epB" id="cKz-Rr-aHG"/>
             </connections>
         </placeholder>
@@ -26,14 +25,6 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euS-gP-t2h">
-                    <rect key="frame" x="272" y="89" width="94" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Cerrar Sesión"/>
-                    <connections>
-                        <action selector="closeSessionButtonAction:" destination="-1" eventType="touchUpInside" id="Mnc-3J-2As"/>
-                    </connections>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

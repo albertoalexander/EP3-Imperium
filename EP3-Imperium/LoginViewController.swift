@@ -37,7 +37,7 @@ class LoginViewController:
                 (result, error) in
                 if error == nil{
                     
-                    self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                    self.navigationController?.pushViewController(HomeViewController(provider: .basic), animated: true)
                 } else {
                     let alertController = UIAlertController(title: "Error",message:"Usuario o clave incorrecta",preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
@@ -46,6 +46,4 @@ class LoginViewController:
             }
         }
     }
-    
-    
 }

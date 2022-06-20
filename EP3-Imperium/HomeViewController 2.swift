@@ -6,17 +6,12 @@
 //
 
 import UIKit
-import FirebaseAuth
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var closeSessionButton: UIButton!
     
-    private let provider: ProviderType
-    
-    
-    init(provider: ProviderType) {
-        self.provider = provider
+    init() {
         super.init(nibName: "HomeViewController", bundle: nil)
     }
     
@@ -31,15 +26,5 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func closeSessionButtonAction(_ sender: Any) {
-        switch provider {
-        
-        case .basic:
-            do {
-                try Auth.auth().signOut()
-                navigationController?.popViewController(animated: true)
-            } catch {
-            
-            }
-        }
     }
 }

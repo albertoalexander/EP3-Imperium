@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,7 @@
 		07CA5C48285D0D5200D2D19F /* Recover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CA5C47285D0D5200D2D19F /* Recover.storyboard */; };
 		07CA5C4C285D0FC100D2D19F /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CA5C4B285D0FC100D2D19F /* Register.storyboard */; };
 		07F894F6285F7BA800FDD3A8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F894F5285F7BA800FDD3A8 /* HomeViewController.xib */; };
-		A3382C679AED58EF7AB2001E /* Pods_EP3_Imperium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48AC77BDDE423FCE4288C0C0 /* Pods_EP3_Imperium.framework */; };
+		7BB8D59B285FF956004211CC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB8D59A285FF956004211CC /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +39,6 @@
 		07CA5C47285D0D5200D2D19F /* Recover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recover.storyboard; sourceTree = "<group>"; };
 		07CA5C4B285D0FC100D2D19F /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		07F894F5285F7BA800FDD3A8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		43EB3AEC33829DAF3A5563DD /* Pods-EP3-Imperium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EP3-Imperium.release.xcconfig"; path = "Target Support Files/Pods-EP3-Imperium/Pods-EP3-Imperium.release.xcconfig"; sourceTree = "<group>"; };
-		48AC77BDDE423FCE4288C0C0 /* Pods_EP3_Imperium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EP3_Imperium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D79ADBC3421C27F0EC36A07F /* Pods-EP3-Imperium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EP3-Imperium.debug.xcconfig"; path = "Target Support Files/Pods-EP3-Imperium/Pods-EP3-Imperium.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3382C679AED58EF7AB2001E /* Pods_EP3_Imperium.framework in Frameworks */,
+				7BB8D59B285FF956004211CC /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +58,6 @@
 			children = (
 				0782FD1C285A69F30074A233 /* EP3-Imperium */,
 				0782FD1B285A69F30074A233 /* Products */,
-				A64D3BB34DB30F1D1BC5E6E4 /* Frameworks */,
-				11C57C91889E46057D2A24BC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,23 +90,6 @@
 			path = "EP3-Imperium";
 			sourceTree = "<group>";
 		};
-		11C57C91889E46057D2A24BC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D79ADBC3421C27F0EC36A07F /* Pods-EP3-Imperium.debug.xcconfig */,
-				43EB3AEC33829DAF3A5563DD /* Pods-EP3-Imperium.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		A64D3BB34DB30F1D1BC5E6E4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				48AC77BDDE423FCE4288C0C0 /* Pods_EP3_Imperium.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,17 +97,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0782FD2E285A69F60074A233 /* Build configuration list for PBXNativeTarget "EP3-Imperium" */;
 			buildPhases = (
-				5A503AE10D9A1A568222ABC6 /* [CP] Check Pods Manifest.lock */,
 				0782FD16285A69F30074A233 /* Sources */,
 				0782FD17285A69F30074A233 /* Frameworks */,
 				0782FD18285A69F30074A233 /* Resources */,
-				53EA178433BE694FECD2CE5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "EP3-Imperium";
+			packageProductDependencies = (
+				7BB8D59A285FF956004211CC /* FirebaseAuth */,
+			);
 			productName = "EP3-Imperium";
 			productReference = 0782FD1A285A69F30074A233 /* EP3-Imperium.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 0782FD11285A69F30074A233;
+			packageReferences = (
+				7BB8D599285FF956004211CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0782FD1B285A69F30074A233 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,48 +164,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		53EA178433BE694FECD2CE5C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EP3-Imperium/Pods-EP3-Imperium-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EP3-Imperium/Pods-EP3-Imperium-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EP3-Imperium/Pods-EP3-Imperium-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5A503AE10D9A1A568222ABC6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EP3-Imperium-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0782FD16285A69F30074A233 /* Sources */ = {
@@ -379,7 +319,6 @@
 		};
 		0782FD2F285A69F60074A233 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D79ADBC3421C27F0EC36A07F /* Pods-EP3-Imperium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,7 +338,6 @@
 		};
 		0782FD30285A69F60074A233 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43EB3AEC33829DAF3A5563DD /* Pods-EP3-Imperium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7BB8D599285FF956004211CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7BB8D59A285FF956004211CC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BB8D599285FF956004211CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0782FD12285A69F30074A233 /* Project object */;
 }
