@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,22 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recuperar contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehp-2Z-ZaW">
-                                <rect key="frame" x="39" y="96" width="168" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuperar contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehp-2Z-ZaW">
+                                <rect key="frame" x="20" y="96" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTb-lH-XDP">
-                                <rect key="frame" x="39" y="146" width="318" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTb-lH-XDP">
+                                <rect key="frame" x="20" y="137" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="NbJ-oS-b7h"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYB-Cd-a0Z">
-                                <rect key="frame" x="39" y="204" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYB-Cd-a0Z">
+                                <rect key="frame" x="133" y="231" width="135" height="30"/>
                                 <state key="normal" title="RECUPERAR"/>
                                 <connections>
                                     <action selector="forgotPassButton_Tapped:" destination="deQ-gi-Lvi" eventType="touchUpInside" id="2uk-0r-6TT"/>
@@ -40,12 +40,45 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7hv-b6-7LD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ehp-2Z-ZaW" firstAttribute="leading" secondItem="7hv-b6-7LD" secondAttribute="leading" constant="20" id="2ML-Cf-yWa"/>
+                            <constraint firstItem="cTb-lH-XDP" firstAttribute="leading" secondItem="ehp-2Z-ZaW" secondAttribute="leading" id="5eE-fP-1ve"/>
+                            <constraint firstItem="dYB-Cd-a0Z" firstAttribute="leading" secondItem="7hv-b6-7LD" secondAttribute="leading" constant="133" id="97i-pN-dM9"/>
+                            <constraint firstItem="cTb-lH-XDP" firstAttribute="trailing" secondItem="ehp-2Z-ZaW" secondAttribute="trailing" id="Q4L-U5-lFg"/>
+                            <constraint firstItem="ehp-2Z-ZaW" firstAttribute="top" secondItem="7hv-b6-7LD" secondAttribute="top" constant="52" id="ScO-rO-93Z"/>
+                            <constraint firstItem="7hv-b6-7LD" firstAttribute="trailing" secondItem="ehp-2Z-ZaW" secondAttribute="trailing" constant="20" id="TwE-jK-BRm"/>
+                            <constraint firstItem="cTb-lH-XDP" firstAttribute="top" secondItem="ehp-2Z-ZaW" secondAttribute="bottom" constant="20" id="dUL-gb-wyG"/>
+                            <constraint firstItem="7hv-b6-7LD" firstAttribute="trailing" secondItem="dYB-Cd-a0Z" secondAttribute="trailing" constant="146" id="h0N-sr-EHI"/>
+                            <constraint firstItem="dYB-Cd-a0Z" firstAttribute="top" secondItem="cTb-lH-XDP" secondAttribute="bottom" constant="49" id="uL0-vB-Ly1"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Kmj-R2-fT3" appends="YES" id="KWx-pn-lce"/>
+                            <outletCollection property="gestureRecognizers" destination="P9N-ir-Srs" appends="YES" id="gyv-yS-uEL"/>
+                            <outletCollection property="gestureRecognizers" destination="Jet-hl-FVg" appends="YES" id="7wI-xs-KzN"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailField" destination="cTb-lH-XDP" id="3Yt-Vi-8qL"/>
+                        <outlet property="txtUser" destination="cTb-lH-XDP" id="ghc-Dm-eu0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ObT-xy-ZEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Kmj-R2-fT3">
+                    <connections>
+                        <action selector="tapToCloseKeyboard:" destination="deQ-gi-Lvi" id="FjU-lZ-Dif"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="P9N-ir-Srs">
+                    <connections>
+                        <action selector="swipeToCloseKeyboard:" destination="deQ-gi-Lvi" id="mee-Iw-oEE"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="Jet-hl-FVg">
+                    <connections>
+                        <action selector="swipeToOpenKeyboard:" destination="deQ-gi-Lvi" id="8GL-js-IA6"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-20.289855072463769" y="14.732142857142856"/>
         </scene>

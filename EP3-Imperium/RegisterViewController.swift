@@ -12,6 +12,21 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField:UITextField!
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet private weak var txtUser: UITextField!
+    
+    @IBAction private func tapToCloseKeyboard(_ sender: UITapGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    
+    @IBAction private func swipeToCloseKeyboard(_ sender: UISwipeGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    
+    @IBAction private func swipeToOpenKeyboard(_ sender: UISwipeGestureRecognizer){
+        self.txtUser.becomeFirstResponder()
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

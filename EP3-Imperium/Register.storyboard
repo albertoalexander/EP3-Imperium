@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,28 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REGISTRAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG2-LN-moY">
-                                <rect key="frame" x="57" y="111" width="90" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTRAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG2-LN-moY">
+                                <rect key="frame" x="20" y="94" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihW-rd-5Xx">
-                                <rect key="frame" x="57" y="165" width="290" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihW-rd-5Xx">
+                                <rect key="frame" x="20" y="135" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xY3-rx-oHC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XNZ-V7-LHY">
-                                <rect key="frame" x="57" y="221" width="290" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XNZ-V7-LHY">
+                                <rect key="frame" x="20" y="200" width="374" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEz-mV-K5o">
-                                <rect key="frame" x="57" y="433" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEz-mV-K5o">
+                                <rect key="frame" x="147" y="270" width="120" height="30"/>
                                 <state key="normal" title="REGISTRAR"/>
                                 <connections>
                                     <action selector="signUpButtonAction:" destination="sMj-39-zaY" eventType="touchUpInside" id="4sy-2H-Xov"/>
@@ -46,14 +45,51 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Me-Vn-sgA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="eEz-mV-K5o" firstAttribute="top" secondItem="XNZ-V7-LHY" secondAttribute="bottom" constant="25" id="3Tq-4w-FpW"/>
+                            <constraint firstItem="9Me-Vn-sgA" firstAttribute="trailing" secondItem="eEz-mV-K5o" secondAttribute="trailing" constant="147" id="9SS-7b-KBP"/>
+                            <constraint firstItem="XNZ-V7-LHY" firstAttribute="leading" secondItem="ihW-rd-5Xx" secondAttribute="leading" id="DAE-wX-2rG"/>
+                            <constraint firstItem="ihW-rd-5Xx" firstAttribute="top" secondItem="fG2-LN-moY" secondAttribute="bottom" constant="20" id="F4w-rY-Cip"/>
+                            <constraint firstItem="fG2-LN-moY" firstAttribute="top" secondItem="9Me-Vn-sgA" secondAttribute="top" constant="50" id="HAE-gE-WPg"/>
+                            <constraint firstItem="XNZ-V7-LHY" firstAttribute="top" secondItem="ihW-rd-5Xx" secondAttribute="bottom" constant="20" id="OHf-z3-oQA"/>
+                            <constraint firstItem="9Me-Vn-sgA" firstAttribute="trailing" secondItem="fG2-LN-moY" secondAttribute="trailing" constant="20" id="QP0-Id-d15"/>
+                            <constraint firstItem="ihW-rd-5Xx" firstAttribute="leading" secondItem="fG2-LN-moY" secondAttribute="leading" id="Svb-6I-xgE"/>
+                            <constraint firstItem="fG2-LN-moY" firstAttribute="leading" secondItem="9Me-Vn-sgA" secondAttribute="leading" constant="20" id="Sxi-uK-weq"/>
+                            <constraint firstItem="eEz-mV-K5o" firstAttribute="leading" secondItem="9Me-Vn-sgA" secondAttribute="leading" constant="147" id="ZCE-YR-oAE"/>
+                            <constraint firstItem="ihW-rd-5Xx" firstAttribute="trailing" secondItem="fG2-LN-moY" secondAttribute="trailing" id="gdD-gA-ZCj"/>
+                            <constraint firstItem="XNZ-V7-LHY" firstAttribute="height" secondItem="ihW-rd-5Xx" secondAttribute="height" id="kSc-tB-YtP"/>
+                            <constraint firstItem="XNZ-V7-LHY" firstAttribute="trailing" secondItem="ihW-rd-5Xx" secondAttribute="trailing" id="xey-IR-YNT"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aVE-yX-zD4" appends="YES" id="81m-RS-x3N"/>
+                            <outletCollection property="gestureRecognizers" destination="dQf-Ue-cjT" appends="YES" id="dtj-cq-zsO"/>
+                            <outletCollection property="gestureRecognizers" destination="tKK-DS-LGx" appends="YES" id="KtG-tX-VWx"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="ihW-rd-5Xx" id="LlM-0y-hNe"/>
                         <outlet property="passwordTextField" destination="XNZ-V7-LHY" id="1QV-VA-VcD"/>
                         <outlet property="signUpButton" destination="eEz-mV-K5o" id="Ddg-CZ-5KC"/>
+                        <outlet property="txtUser" destination="ihW-rd-5Xx" id="ToM-DW-eoN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Em-Lg-QrU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aVE-yX-zD4">
+                    <connections>
+                        <action selector="tapToCloseKeyboard:" destination="sMj-39-zaY" id="h46-vr-WDH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="dQf-Ue-cjT">
+                    <connections>
+                        <action selector="swipeToOpenKeyboard:" destination="sMj-39-zaY" id="uRT-bN-8hD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="tKK-DS-LGx">
+                    <connections>
+                        <action selector="swipeToCloseKeyboard:" destination="sMj-39-zaY" id="69g-Lz-AbG"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="231.8840579710145" y="-407.14285714285711"/>
         </scene>

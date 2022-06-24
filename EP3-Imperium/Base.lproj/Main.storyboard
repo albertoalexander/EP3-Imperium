@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pMX-yP-cJj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pMX-yP-cJj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,60 +42,114 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CaraLibro-img" translatesAutoresizingMaskIntoConstraints="NO" id="59Q-Uw-EGj">
-                                <rect key="frame" x="0.0" y="94" width="414" height="348"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CaraLibro-img" translatesAutoresizingMaskIntoConstraints="NO" id="59Q-Uw-EGj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="243.5"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0q-p4-Rz2">
-                                <rect key="frame" x="243" y="472" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Recuperar"/>
-                                <connections>
-                                    <segue destination="Ufg-Je-970" kind="show" id="hXf-0G-QvS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ub-dR-Ae9">
-                                <rect key="frame" x="81" y="472" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Registrar"/>
-                                <connections>
-                                    <action selector="signUpButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWy-ue-u48"/>
-                                    <segue destination="giK-kh-vtj" kind="show" id="f0j-px-Rt1"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dja-y5-mI0">
-                                <rect key="frame" x="46" y="536" width="321" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-zu-Zr3">
-                                <rect key="frame" x="46" y="598" width="321" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ers-jn-MAf">
-                                <rect key="frame" x="46" y="666" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Acceder"/>
-                                <connections>
-                                    <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRZ-m9-2O7"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBu-70-T62">
+                                <rect key="frame" x="20" y="331.5" width="374" height="233"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-zu-Zr3">
+                                        <rect key="frame" x="20" y="84" width="334" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dja-y5-mI0">
+                                        <rect key="frame" x="20" y="20" width="334" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="6cg-tN-uA6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ers-jn-MAf">
+                                        <rect key="frame" x="140" y="148" width="105" height="32"/>
+                                        <state key="normal" title="Acceder"/>
+                                        <connections>
+                                            <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRZ-m9-2O7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0q-p4-Rz2">
+                                        <rect key="frame" x="233" y="188" width="71" height="30"/>
+                                        <state key="normal" title="Recuperar"/>
+                                        <connections>
+                                            <segue destination="Ufg-Je-970" kind="show" id="hXf-0G-QvS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ub-dR-Ae9">
+                                        <rect key="frame" x="70" y="188" width="62" height="30"/>
+                                        <state key="normal" title="Registrar"/>
+                                        <connections>
+                                            <action selector="signUpButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWy-ue-u48"/>
+                                            <segue destination="giK-kh-vtj" kind="show" id="f0j-px-Rt1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="A0q-p4-Rz2" secondAttribute="bottom" constant="15" id="0wc-8I-RjT"/>
+                                    <constraint firstItem="Dja-y5-mI0" firstAttribute="top" secondItem="mBu-70-T62" secondAttribute="top" constant="20" id="159-ZB-joP"/>
+                                    <constraint firstItem="ers-jn-MAf" firstAttribute="leading" secondItem="mBu-70-T62" secondAttribute="leading" constant="140" id="IHL-5p-YYi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dja-y5-mI0" secondAttribute="trailing" constant="20" id="NyU-6Y-asg"/>
+                                    <constraint firstAttribute="bottom" secondItem="9ub-dR-Ae9" secondAttribute="bottom" constant="15" id="Pzh-xR-TLW"/>
+                                    <constraint firstItem="ers-jn-MAf" firstAttribute="top" secondItem="Wae-zu-Zr3" secondAttribute="bottom" constant="20" id="XfD-5S-N2I"/>
+                                    <constraint firstItem="Wae-zu-Zr3" firstAttribute="trailing" secondItem="Dja-y5-mI0" secondAttribute="trailing" id="Xfv-Xb-nen"/>
+                                    <constraint firstAttribute="trailing" secondItem="A0q-p4-Rz2" secondAttribute="trailing" constant="70" id="YMG-DJ-t3A"/>
+                                    <constraint firstAttribute="trailing" secondItem="ers-jn-MAf" secondAttribute="trailing" constant="129" id="Z6R-DC-Jkw"/>
+                                    <constraint firstItem="9ub-dR-Ae9" firstAttribute="top" secondItem="Wae-zu-Zr3" secondAttribute="bottom" constant="60" id="aHs-Z9-DR9"/>
+                                    <constraint firstItem="Wae-zu-Zr3" firstAttribute="height" secondItem="Dja-y5-mI0" secondAttribute="height" id="d2h-bK-KpE"/>
+                                    <constraint firstItem="A0q-p4-Rz2" firstAttribute="top" secondItem="Wae-zu-Zr3" secondAttribute="bottom" constant="60" id="dj3-gk-yZY"/>
+                                    <constraint firstItem="9ub-dR-Ae9" firstAttribute="leading" secondItem="mBu-70-T62" secondAttribute="leading" constant="70" id="hCT-2Q-0ox"/>
+                                    <constraint firstItem="Wae-zu-Zr3" firstAttribute="top" secondItem="Dja-y5-mI0" secondAttribute="bottom" constant="20" id="pTl-4B-1aP"/>
+                                    <constraint firstItem="Dja-y5-mI0" firstAttribute="leading" secondItem="mBu-70-T62" secondAttribute="leading" constant="20" id="rlw-Xk-yGg"/>
+                                    <constraint firstItem="Wae-zu-Zr3" firstAttribute="leading" secondItem="Dja-y5-mI0" secondAttribute="leading" id="taX-yD-t2C"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="59Q-Uw-EGj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1HP-oK-4T1"/>
+                            <constraint firstItem="59Q-Uw-EGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B2T-ny-3Ad"/>
+                            <constraint firstItem="mBu-70-T62" firstAttribute="top" secondItem="59Q-Uw-EGj" secondAttribute="bottom" id="E2B-J5-jtb"/>
+                            <constraint firstItem="mBu-70-T62" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O3m-JZ-8TI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mBu-70-T62" secondAttribute="trailing" constant="20" id="dBz-yc-9Yf"/>
+                            <constraint firstItem="mBu-70-T62" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jmr-vo-QJO"/>
+                            <constraint firstItem="59Q-Uw-EGj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s5o-2J-ZDo"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Xrh-yO-04G" appends="YES" id="slW-gv-3tn"/>
+                            <outletCollection property="gestureRecognizers" destination="hHY-ZF-mJA" appends="YES" id="NCC-CU-b8k"/>
+                            <outletCollection property="gestureRecognizers" destination="BBa-Re-KS2" appends="YES" id="AX6-qa-UUi"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="gvp-fg-lOK"/>
                     <connections>
+                        <outlet property="anchorViewContentCenterY" destination="O3m-JZ-8TI" id="1vl-dX-Ew2"/>
                         <outlet property="emailTextField" destination="Dja-y5-mI0" id="wsx-Ii-7y9"/>
                         <outlet property="logInButton" destination="ers-jn-MAf" id="zDU-dN-dDW"/>
                         <outlet property="passwordTextField" destination="Wae-zu-Zr3" id="UJ7-c0-kUs"/>
                         <outlet property="signUpButton" destination="9ub-dR-Ae9" id="dgv-aL-X7g"/>
+                        <outlet property="txtUser" destination="Dja-y5-mI0" id="cjM-3E-s0U"/>
+                        <outlet property="viewContent" destination="mBu-70-T62" id="Hje-tF-Z6c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Xrh-yO-04G">
+                    <connections>
+                        <action selector="tapToCloseKeyboard:" destination="BYZ-38-t0r" id="ceK-NW-4ph"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="hHY-ZF-mJA">
+                    <connections>
+                        <action selector="swipeToOpenKeyboard:" destination="BYZ-38-t0r" id="Pwn-fR-Fo4"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="BBa-Re-KS2">
+                    <connections>
+                        <action selector="swipeToCloseKeyboard:" destination="BYZ-38-t0r" id="Bkd-HA-Ff2"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="292.75362318840581" y="-319.41964285714283"/>
         </scene>
@@ -137,6 +191,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -10,7 +10,21 @@ import Firebase
 
 class RecoverViewController: UIViewController {
     
+    @IBOutlet private weak var txtUser: UITextField!
+    
     @IBOutlet weak var emailField: UITextField!
+    
+    @IBAction private func tapToCloseKeyboard(_ sender: UITapGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    
+    @IBAction private func swipeToCloseKeyboard(_ sender: UISwipeGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    
+    @IBAction private func swipeToOpenKeyboard(_ sender: UISwipeGestureRecognizer){
+        self.txtUser.becomeFirstResponder()
+    }
     
     
     override func viewDidLoad() {
